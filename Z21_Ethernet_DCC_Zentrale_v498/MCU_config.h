@@ -192,18 +192,18 @@
 #define Z21ResetPin 47  //RESET-Button-Pin bei Neustart betätigen um Standard IP zu setzten!
 #define Z21ButtonPin Z21ResetPin  //Pin where the POWER-Button is conected
 //DCC and Booster
-#define DCCLed 3    //LED to show DCC active
-#define DCCPin 6    //Pin for DCC sginal out
+#define DCCLed 39    //LED to show DCC active
+#define DCCPin 3    //Pin for DCC sginal out
 #define additionalOutPin 11 //Pin for true DCC Output without Shutdown adn RailCom
 #define ShortLed 45     //LED to show Short
 #define ShortExtPin 5  //Pin to detect Short Circuit of Booster (detect LOW)
-#define GoExtPin  A4   //Pin for GO/STOP Signal of Booster
+#define GoExtPin  12   //Pin for GO/STOP Signal of Booster
 #define ProgRelaisPin  A5   //Pin for using Kehrschleifen-Modul
 #define ACKSensePin 2 //Pin for ACK Comperator input
 //Booster INT config:
-#define GoIntPin 39   //Pin for inverted DCC Signal
+#define GoIntPin 12   //Pin for inverted DCC Signal
 #define ShortIntPin 41  //Pin for second Booster like TLE5206 (detect HIGH)
-#define VAmpIntPin A9   //Input for Current sensor (CV read)
+#define VAmpIntPin A0   //Input for Current sensor (CV read)
 //#define VAmSensePin A8 //ACS712 5A Sensor (for testing only)
 #define VoltIntPin A10  //Rail Voltage: Rail:100k - Sense - 4,7k - GND
 #define TempPin A11     //Temp.Sense_resistor (15k) with 46k Pull-Up or DALLAS
@@ -238,9 +238,9 @@
   #define S88ResetPin 27    //S88 Reset
 #else
     //Eingänge:
-  #define S88DataPin A0      //S88 Data IN
+  #define S88DataPin A7      //S88 Data IN
     //Ausgänge:
-  #define S88ClkPin A1      //S88 Clock
+  #define S88ClkPin A6      //S88 Clock
   #define S88PSPin A2       //S88 PS/LOAD
   #define S88ResetPin A3    //S88 Reset
 #endif
